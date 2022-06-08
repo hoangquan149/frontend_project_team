@@ -1,0 +1,80 @@
+@import "../../../styles/variables.scss";
+.footer {
+   margin-top: 120px;
+   padding: 40px;
+   background-color: #3c4862 !important;
+}
+
+.footer-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.footer-list-item {
+   padding-left: 0;
+}
+
+.footer-title {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 19px;
+
+   color: $color-white;
+}
+
+.footer-des,
+.footer-item {
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 22px;
+   margin: 10px 0;
+   /* identical to box height */
+
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input {
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 4px;
+   padding: 14px;
+   color: white;
+   width: 267px;
+
+   ::placeholder {
+      color: $color-white !important;
+   }
+}
+
+.footer-bottom {
+   margin-top: 40px;
+   p {
+      @extend .footer-des;
+   }
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .footer-box {
+      margin-top: 20px;
+      flex-basis: 30%;
+   }
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .footer-logo {
+      margin: 0 auto;
+   }
+
+   .footer-box {
+      text-align: center;
+      margin-top: 20px;
+      flex-basis: 100%;
+   }
+
+   .footer-bottom {
+      text-align: center;
+   }
+}

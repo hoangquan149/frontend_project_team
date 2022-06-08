@@ -3,7 +3,11 @@ import styles from "./style.module.scss";
 import BlogItem from "../../components/commons/components/BlogItem";
 const cx = classNames.bind(styles);
 
+const selected = "selected";
+
 function Blog() {
+   const classes = cx("pagination-item", { selected });
+
    return (
       <div className="container">
          <div className={cx("blog-header")}>
@@ -14,6 +18,15 @@ function Blog() {
             </p>
          </div>
          <div className={cx("blog-list")}>
+            <div className={cx("blog-item")}>
+               <BlogItem />
+            </div>
+            <div className={cx("blog-item")}>
+               <BlogItem />
+            </div>
+            <div className={cx("blog-item")}>
+               <BlogItem />
+            </div>
             <div className={cx("blog-item")}>
                <BlogItem />
             </div>
@@ -35,6 +48,13 @@ function Blog() {
                <BlogItem />
             </div>
          </div> */}
+
+         <div className={cx("pagination")}>
+            <a className={classes}>1</a>
+            <a className={cx("pagination-item")}>2</a>
+            <a className={cx("pagination-item")}>3</a>
+            <a className={cx("pagination-item")}>4</a>
+         </div>
       </div>
    );
 }

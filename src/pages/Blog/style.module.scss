@@ -29,8 +29,38 @@
    justify-content: space-between;
 }
 
+//pagination
+
+.pagination {
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   gap: 0 10px;
+}
+
+.pagination-item {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: $color-grey;
+   padding: 8px 20px;
+
+   border-radius: 4px;
+
+   &:hover {
+      cursor: pointer;
+   }
+
+   &.selected {
+      background: rgba(105, 118, 148, 0.1);
+   }
+}
+
 //pc
 @media only screen and (min-width: 1024px) {
+   .blog-item {
+      margin-top: 20px;
+   }
 }
 //tablet
 @media only screen and (min-width: 740px) and (max-width: 1023px) {

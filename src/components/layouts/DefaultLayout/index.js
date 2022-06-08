@@ -6,7 +6,7 @@ function DefaultLayout({ children }) {
       <div>
          <Header></Header>
          <div className="wrapper">{children}</div>
-         {/* <Footer></Footer> */}
+         <Footer></Footer>
       </div>
    );
 }
