@@ -1,6 +1,9 @@
 @import "../../../../styles/variables.scss";
 
 .MuiPaper-root {
+   :hover {
+      cursor: pointer;
+   }
    .MuiCardContent-root {
       padding: 20px;
       .MuiTypography-root {

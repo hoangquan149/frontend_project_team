@@ -7,8 +7,10 @@ const icons = {
    brookeTwo: require("./brooke-2.svg"),
    avatar: require("./avatar.svg"),
    avt: require("./avt.svg"),
+   avt2: require("./avt2.svg"),
    stars: require("./stars.svg"),
    blog1: require("./blog1.svg"),
+   contact: require("./contact.svg"),
 };
 
 export default icons;

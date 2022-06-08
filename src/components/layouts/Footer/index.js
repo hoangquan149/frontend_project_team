@@ -8,7 +8,7 @@ function Footer() {
       <footer className={cx("footer")}>
          <div className="container">
             <div className={cx("footer-content")}>
-               <div className={cx("footer-box")}>
+               <div className={cx("footer-box-logo")}>
                   <img src={icons.logo.default} className={cx("footer-logo")} />
                   <p className={cx("footer-des")}>
                      Collaboration platform for modern teams.
@@ -44,7 +44,7 @@ function Footer() {
                      </li>
                   </ul>
                </div>
-               <div className={cx("footer-box")}>
+               <div className={cx("footer-seen-mail")}>
                   <h5 className={cx("footer-title")}>Stay up to date</h5>
                   <p className={cx("footer-des")}>
                      Subscribe to our newsletter

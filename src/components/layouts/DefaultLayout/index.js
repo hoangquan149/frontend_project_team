@@ -1,4 +1,5 @@
-import Header from "../Header";
+// import Header from "../Header";
+import Header from "../Home/Header";
 import Footer from "../Footer";
 
 function DefaultLayout({ children }) {

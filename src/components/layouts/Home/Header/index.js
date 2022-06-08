@@ -2,20 +2,21 @@ import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faBars } from "@fortawesome/free-solid-svg-icons";
-import Banner from "./Banner";
+// import Banner from "./Banner";
 
-import icons from "../../../assets/icons";
-import { LIST_PATH } from "../../../routes";
-import styles from "./style.scss";
+import icons from "../../../../assets/icons";
+import { LIST_PATH } from "../../../../routes";
+import styles from "./style.module.scss";
+import Banner from "../../../../pages/Home/Banner";
 const cx = classNames.bind(styles);
 
 function Header() {
    return (
-      <div>
+      <div className={cx("banner-header")}>
          <div className="container">
             <header className={cx("header")}>
                <img
-                  src={icons.logo2.default}
+                  src={icons.logo.default}
                   className={cx("header-logo")}
                   alt=""
                />
@@ -68,8 +69,9 @@ function Header() {
                   </li>
                </ul>
             </nav>
+
+            <Banner />
          </div>
-         {/* <Banner /> */}
       </div>
    );
 }

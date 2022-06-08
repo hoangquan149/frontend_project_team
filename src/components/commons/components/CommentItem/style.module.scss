@@ -1,0 +1,63 @@
+@import "../../../../styles/variables.scss";
+.comment {
+   display: flex;
+   margin-top: 10px;
+
+   img {
+      width: 100%;
+   }
+
+   .info-comment {
+      margin-left: 30px;
+      h2 {
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 19px;
+
+         letter-spacing: 0.1em;
+         text-transform: uppercase;
+
+         color: $color-grey;
+
+         margin-bottom: 0;
+
+         opacity: 0.3;
+      }
+
+      .fullName {
+         font-weight: $font-weight-small;
+         font-size: 26px;
+         line-height: 38px;
+         margin-bottom: 0;
+
+         color: $color-dark-blue;
+      }
+
+      p {
+         font-weight: $font-weight-small;
+         font-size: 15px;
+         line-height: 22px;
+
+         color: $color-grey;
+      }
+   }
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .comment {
+      img {
+         width: 80px;
+      }
+
+      .info-comment {
+         margin-left: 15px;
+      }
+   }
+}
