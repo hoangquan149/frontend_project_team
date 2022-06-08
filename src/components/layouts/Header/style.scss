@@ -1,0 +1,144 @@
+@import "../../../styles/variables.scss";
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+}
+.header-logo {
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+   gap: 0 30px;
+
+   .menu-item a {
+      display: block;
+      padding: 12px 0;
+      color: $color-dark-blue;
+      font-size: $font-size-small;
+      font-weight: $font-weight-big;
+      line-height: 17px;
+   }
+
+   .get-btn {
+      font-size: $font-size-small;
+      font-weight: $font-weight-big;
+      padding: 12px 20px;
+      // background: rgba(255, 255, 255, 0.2);
+      // background-color: #0bbef2;
+      // opacity: 0.15;
+      // border-radius: 4px;
+      line-height: 17px;
+      text-align: center;
+
+      /* Blue */
+
+      color: #0bbef2;
+      border: none;
+      // color: $color-white;
+      // background: #0bbef2;
+      // opacity: 0.15;
+      border-radius: 4px;
+      // &:hover {
+      //    background: rgba(255, 255, 255, 0.3);
+      // }
+   }
+}
+
+.bar-btn {
+   display: none;
+   font-size: 25px;
+}
+
+//nav mobile
+.menu-mobile {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: 300px;
+   max-width: 100%;
+   background: #fff;
+   z-index: 1;
+   transform: translate(100%);
+   opacity: 0px;
+   transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.menu-input:checked ~ .menu-mobile {
+   transform: translate(-0);
+   opacity: 1;
+}
+
+.menu-input:checked ~ .menu-overlay {
+   display: block;
+}
+
+.menu-mobile-list {
+   margin-top: 20px;
+}
+
+.menu-mobile-item a {
+   display: block;
+   padding: 12px 0;
+   color: $color-dark-blue;
+   font-size: $font-size-small;
+   font-weight: $font-weight-big;
+   line-height: 17px;
+}
+
+.close-btn {
+   position: absolute;
+   right: 6%;
+   top: 2%;
+   font-size: 30px;
+}
+
+.menu-overlay {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.2);
+   display: none;
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+   .bar-btn {
+      display: none;
+   }
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .header {
+      padding: 20px 0;
+   }
+   .menu {
+      display: none;
+   }
+
+   .bar-btn {
+      display: block;
+   }
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .header {
+      padding: 20px 0;
+   }
+
+   .menu {
+      display: none;
+   }
+
+   .bar-btn {
+      display: block;
+   }
+}

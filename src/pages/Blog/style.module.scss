@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+.blog-header {
+   margin: 60px 0;
+}
+
+.blog-title {
+   font-weight: $font-weight-small;
+   font-size: 55px;
+   line-height: 67px;
+
+   color: $color-dark-blue;
+
+   margin-bottom: 20px;
+}
+
+.blog-description {
+   font-weight: $font-weight-small;
+   font-size: 18px;
+   line-height: 26px;
+
+   color: $color-grey;
+
+   margin-bottom: 0;
+}
+
+.blog-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .blog-item {
+      margin-top: 20px;
+   }
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .blog-header {
+      margin: 30px 0;
+   }
+   .blog-item {
+      margin-top: 20px;
+   }
+}

@@ -1,0 +1,42 @@
+@import "../../../../styles/variables.scss";
+.wrapper {
+   width: 100%;
+   max-width: 362px;
+   padding: 30px 40px;
+   background-color: $color-white;
+   border-radius: 5px;
+}
+
+.description {
+   margin-top: 30px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 26px;
+   color: $color-grey;
+}
+
+.content {
+   display: flex;
+   margin-top: 75px;
+}
+
+.info {
+   flex: 1;
+   margin-left: 12px;
+}
+
+.name {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 23px;
+
+   color: #697694;
+}
+
+.username {
+   font-weight: $font-weight-small;
+   font-size: 13px;
+   line-height: 19px;
+
+   color: #697694;
+}
