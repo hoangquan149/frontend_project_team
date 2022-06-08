@@ -14,7 +14,7 @@ export default function BlogItem({
    className = "",
 }) {
    return (
-      <Card className={`${className}`} sx={{ maxWidth: width }}>
+      <Card className={`${className}`} sx={{ width: width }}>
          <CardMedia
             component="img"
             alt="green iguana"

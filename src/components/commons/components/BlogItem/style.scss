@@ -57,3 +57,19 @@
       margin-bottom: 0;
    }
 }
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .MuiPaper-root {
+      width: 100% !important;
+   }
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .MuiPaper-root {
+      width: 100% !important;
+   }
+}
