@@ -5,7 +5,7 @@ function BrookeOne() {
    return (
       <div className="brooke">
          <div className="brooke-container">
-            <img src={icons.brookeOne.default} />
+            <img src={icons.brookeOne.default} className="brooke-image" />
             <div className="brooke-content">
                <h1 className="brooke-title">Simplest task management</h1>
                <p className="brooke-description">

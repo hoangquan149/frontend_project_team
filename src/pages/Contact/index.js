@@ -1,7 +1,7 @@
 import icons from "../../assets/icons";
 import classNames from "classnames/bind";
 import styles from "./style.module.scss";
-import CommentItem from "../../components/commons/components/CommentItem";
+import CommentItem from "../../commons/components/CommentItem";
 
 const cx = classNames.bind(styles);
 

@@ -1,6 +1,6 @@
 import styles from "./style.module.scss";
 import classNames from "classnames/bind";
-import icons from "../../../../assets/icons";
+import icons from "../../../assets/icons";
 const cx = classNames.bind(styles);
 
 function PeopleItem() {

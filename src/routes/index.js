@@ -3,6 +3,7 @@ import Blog from "../pages/Blog";
 import Contact from "../pages/Contact";
 import Product from "../pages/Product";
 import DefaultLayout from "../components/layouts/DefaultLayout";
+import DefaultLayoutHome from "../components/layouts/Home/DefaultLayoutHome";
 
 export const LIST_PATH = {
    HOME: "/",
@@ -16,7 +17,7 @@ export const PUBLIC_ROUTES = [
       name: "Home",
       path: LIST_PATH.HOME,
       component: Home,
-      layout: DefaultLayout,
+      layout: DefaultLayoutHome,
    },
    {
       name: "Blog",

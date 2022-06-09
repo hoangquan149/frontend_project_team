@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./style.module.scss";
-import BlogItem from "../../components/commons/components/BlogItem";
+import BlogItem from "../../commons/components/BlogItem";
 const cx = classNames.bind(styles);
 
 const selected = "selected";

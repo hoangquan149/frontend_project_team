@@ -74,3 +74,41 @@
       }
    }
 }
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .banner {
+      height: auto;
+   }
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .banner {
+      height: 300px;
+   }
+
+   .banner-content {
+      width: 100%;
+      // max-width: 508px;
+
+      .banner-title {
+         font-size: 2rem !important;
+      }
+
+      .banner-description {
+         display: none;
+      }
+
+      .banner-access {
+      }
+
+      .banner-access {
+         .banner-btn {
+            margin-left: 0;
+         }
+      }
+   }
+}

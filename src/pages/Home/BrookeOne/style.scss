@@ -5,6 +5,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   flex-wrap: wrap;
    width: 100%;
    height: 700px;
 
@@ -15,12 +16,16 @@
       justify-content: space-between;
       align-items: center;
 
+      // background-image: url("../../../assets/images/dashboard.png");
+      // background-repeat: no-repeat;
+      // background-position: right center;
+      // background-size: auto;
+
       .brooke-content {
          width: 100%;
          max-width: 466px;
 
          .brooke-title {
-            font-style: normal;
             font-weight: 400;
             font-size: 55px;
             line-height: 67px;
@@ -28,7 +33,6 @@
          }
 
          .brooke-description {
-            font-style: normal;
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
@@ -39,7 +43,6 @@
          .intro-btn {
             //   display: flex;
             //   align-items: center;
-            font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 19px;
@@ -64,4 +67,41 @@
    //    height: 604px;
    //    background-repeat: no-repeat;
    // }
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .brooke {
+      height: auto;
+      margin-top: 50px;
+   }
+
+   .brooke-container {
+      flex-direction: column;
+   }
+   .brooke-image {
+      width: 100%;
+      padding: 0 15px;
+
+      // display: none;
+   }
+
+   .brooke-content {
+      width: 100%;
+      padding: 15px;
+
+      .brooke-title {
+         font-size: 1.5em !important;
+      }
+
+      .brooke-description {
+         margin: 0 0 28px 0 !important;
+      }
+   }
 }

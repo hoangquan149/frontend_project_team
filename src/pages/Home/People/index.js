@@ -1,4 +1,4 @@
-import PeopleItem from "../../../components/commons/components/PeopleItem";
+import PeopleItem from "../../../commons/components/PeopleItem";
 import "./style.scss";
 
 function People() {

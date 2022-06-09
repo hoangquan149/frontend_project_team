@@ -1,8 +1,8 @@
 // import Header from "../Header";
 import Header from "../Header";
-import Footer from "../Footer";
+import Footer from "../../Footer";
 
-function DefaultLayout({ children }) {
+function DefaultLayoutHome({ children }) {
    return (
       <div>
          <Header></Header>
@@ -12,4 +12,4 @@ function DefaultLayout({ children }) {
    );
 }
 
-export default DefaultLayout;
+export default DefaultLayoutHome;

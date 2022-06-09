@@ -10,6 +10,11 @@
    height: 700px;
    max-height: 100%;
 
+   background-image: url("../../../assets/images/dashboard.png");
+   background-repeat: no-repeat;
+   background-position: right center;
+   background-size: auto;
+
    .introduce-container {
       width: $width-container;
       margin: 0 auto;
@@ -66,4 +71,31 @@
    //    height: 604px;
    //    background-repeat: no-repeat;
    // }
+}
+
+//pc
+@media only screen and (min-width: 1024px) {
+}
+//tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+//mobile
+@media only screen and (max-width: 740px) {
+   .introduce {
+      background-image: none;
+      margin-top: 50px;
+      height: auto;
+   }
+
+   .introduce-content {
+      padding: 15px;
+
+      .introduce-title {
+         font-size: 2rem !important;
+      }
+
+      .introduce-description {
+         margin: 0;
+      }
+   }
 }
