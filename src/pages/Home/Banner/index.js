@@ -13,7 +13,7 @@ function Banner() {
                </p>
                <div className="banner-access">
                   <input className="banner-input" placeholder="Your email " />
-                  <button className="banner-btn">Get Early Access</button>
+                  <button className="banner-btn">Get Access</button>
                </div>
             </div>
          </div>

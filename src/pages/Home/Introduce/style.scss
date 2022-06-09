@@ -78,6 +78,11 @@
 }
 //tablet
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .introduce {
+      background-image: none;
+      height: auto;
+      display: none;
+   }
 }
 //mobile
 @media only screen and (max-width: 740px) {

@@ -65,6 +65,32 @@
 }
 //tablet
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .brooke-two {
+      height: auto;
+      margin-top: 50px;
+   }
+   .brooke-two-container {
+      justify-content: unset;
+      padding: 15px;
+
+      .brooke-two-image {
+         width: 400px;
+         flex-basis: 48%;
+         margin-left: 20px;
+      }
+      .brooke-two-content {
+         flex-basis: 48%;
+         margin-right: 20px;
+
+         .brooke-two-title {
+            font-size: 2rem !important;
+         }
+
+         .brooke-two-description {
+            margin: 0 0 28px 0 !important;
+         }
+      }
+   }
 }
 //mobile
 @media only screen and (max-width: 740px) {

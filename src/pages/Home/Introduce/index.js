@@ -19,8 +19,8 @@ function Introduce() {
                   </span>
                </a>
             </div>
-            {/* <img className="introduce-image" src={icons.dashboard.default} /> */}
          </div>
+         {/* <img className="introduce-image" src={icons.dashboard.default} /> */}
       </div>
    );
 }
