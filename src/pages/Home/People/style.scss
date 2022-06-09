@@ -1,15 +1,21 @@
 @import "../../../styles/variables.scss";
 
+.swiper-slide {
+   width: 367px !important;
+   height: 370px !important;
+}
+
 .people {
+   margin-left: 100px;
    .people-container {
-      width: $width-container;
-      margin: 0 auto;
-      display: flex;
+      // width: $width-container;
+      // margin: 0 auto;
+      // display: flex;
 
       .people-list {
          margin-top: 120px;
-         display: inline-flex;
-         gap: 0 30px;
+         // display: inline-flex;
+         // gap: 0 30px;
       }
    }
 
@@ -27,7 +33,31 @@
 }
 //tablet
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .people {
+      margin-left: 0;
+      padding: 15px;
+   }
+
+   .people-list {
+      margin-top: 20px !important;
+   }
+
+   .swiper-slide {
+      margin-right: 20px;
+   }
 }
 //mobile
 @media only screen and (max-width: 740px) {
+   .people {
+      margin-left: 0;
+      padding: 15px;
+   }
+
+   .people-list {
+      margin-top: 20px !important;
+   }
+
+   .people-header-title {
+      font-size: 2rem !important;
+   }
 }
