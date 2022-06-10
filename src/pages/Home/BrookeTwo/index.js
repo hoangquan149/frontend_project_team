@@ -29,7 +29,6 @@ function BrookeTwo() {
                   <img src={icons.date.default} />
                </div>
             </div>
-            {/* <img src={icons.brookeTwo.default} className="brooke-two-image" /> */}
          </div>
       </div>
    );
