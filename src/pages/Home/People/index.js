@@ -59,10 +59,10 @@ function People() {
                </div>
                <div className="people-actions">
                   <button className="people-action">
-                     <img src={icons.vector.default} />
+                     <img src={icons.vt.default} />
                   </button>
                   <button className="people-action">
-                     <img src={icons.vector.default} />
+                     <img src={icons.vt.default} />
                   </button>
                </div>
             </div>

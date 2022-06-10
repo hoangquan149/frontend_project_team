@@ -16,7 +16,7 @@ const icons = {
    user2: require("./user2.svg"),
    pin: require("./pin.svg"),
    date: require("./date.svg"),
-   vector: require("./vector.svg"),
+   vt: require("./vt.svg"),
 };
 
 export default icons;
