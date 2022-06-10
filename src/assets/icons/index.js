@@ -11,6 +11,12 @@ const icons = {
    stars: require("./stars.svg"),
    blog1: require("./blog1.svg"),
    contact: require("./contact.svg"),
+   send: require("./sendbtn.svg"),
+   user1: require("./user1.svg"),
+   user2: require("./user2.svg"),
+   pin: require("./pin.svg"),
+   date: require("./date.svg"),
+   vector: require("./vector.svg"),
 };
 
 export default icons;

@@ -7,11 +7,10 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-// import required modules
-import { FreeMode, Pagination } from "swiper";
-// import {FreeMode, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { FreeMode, Pagination, Navigation } from "swiper";
 
 import PeopleItem from "../../../commons/components/PeopleItem";
+import icons from "../../../assets/icons";
 import "./style.scss";
 
 function People() {
@@ -25,28 +24,20 @@ function People() {
                <div className="people-list">
                   <Swiper
                      slidesPerView={4}
-                     spaceBetween={30}
+                     spaceBetween={20}
                      freeMode={true}
+                     navigation={true}
                      breakpoints={{
                         740: {
                            width: 740,
-                           slidesPerView: 1,
+                           slidesPerView: 2,
                         },
                         768: {
                            width: 768,
                            slidesPerView: 2,
                         },
                      }}
-                     // pagination={{
-                     //    clickable: true,
-                     //    renderBullet: (index, className) => {
-                     //       return `<span className='${className}'>${
-                     //          index + 1
-                     //       }</span>`;
-                     //    },
-                     // }}
                      modules={[FreeMode, Pagination]}
-                     // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
                      className="mySwiper"
                   >
                      <SwiperSlide>
@@ -65,6 +56,14 @@ function People() {
                         <PeopleItem />
                      </SwiperSlide>
                   </Swiper>
+               </div>
+               <div className="people-actions">
+                  <button className="people-action">
+                     <img src={icons.vector.default} />
+                  </button>
+                  <button className="people-action">
+                     <img src={icons.vector.default} />
+                  </button>
                </div>
             </div>
          </div>

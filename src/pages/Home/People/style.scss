@@ -17,6 +17,21 @@
          // display: inline-flex;
          // gap: 0 30px;
       }
+
+      .people-actions {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         gap: 0 20px;
+         .people-action {
+            background-color: transparent;
+         }
+
+         .people-action + .people-action {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+         }
+      }
    }
 
    .people-header-title {

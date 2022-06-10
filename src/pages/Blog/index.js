@@ -37,17 +37,6 @@ function Blog() {
                <BlogItem />
             </div>
          </div>
-         {/* <div className={"row"}>
-            <div className={"col-lg-4 col-md-6 col-xs-12"}>
-               <BlogItem />
-            </div>
-            <div className={"col-lg-4 col-md-6 col-xs-12"}>
-               <BlogItem />
-            </div>
-            <div className={"col-lg-4 col-md-6 col-xs-12"}>
-               <BlogItem />
-            </div>
-         </div> */}
 
          <div className={cx("pagination")}>
             <a className={classes}>1</a>

@@ -24,7 +24,12 @@ function BrookeTwo() {
                   </span>
                </a>
             </div>
-            <img src={icons.brookeTwo.default} className="brooke-two-image" />
+            <div className="brooke-two-image">
+               <div className="brooke-two-image-content">
+                  <img src={icons.date.default} />
+               </div>
+            </div>
+            {/* <img src={icons.brookeTwo.default} className="brooke-two-image" /> */}
          </div>
       </div>
    );

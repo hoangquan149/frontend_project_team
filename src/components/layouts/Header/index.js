@@ -13,11 +13,13 @@ function Header() {
       <div>
          <div className="container">
             <header className={cx("header")}>
-               <img
-                  src={icons.logo2.default}
-                  className={cx("header-logo")}
-                  alt=""
-               />
+               <Link to={LIST_PATH.HOME}>
+                  <img
+                     src={icons.logo2.default}
+                     className={cx("header-logo")}
+                     alt=""
+                  />
+               </Link>
                <ul className={cx("menu")}>
                   <li className={cx("menu-item")}>
                      <Link to={LIST_PATH.PRODUCT}>Products</Link>

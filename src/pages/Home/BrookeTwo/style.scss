@@ -16,10 +16,23 @@
       justify-content: space-between;
       align-items: center;
 
-      // background-image: url("../../../assets/images/dashboard.png");
-      // background-repeat: no-repeat;
-      // background-position: right center;
-      // background-size: auto;
+      .brooke-two-image {
+         position: relative;
+         background-image: url("../../../assets/images/brooke.png");
+         background-size: 100%;
+         width: 565px;
+         max-width: 100%;
+         background-position: right center;
+         height: 604px;
+         max-height: 100%;
+         background-repeat: no-repeat;
+
+         &-content {
+            position: absolute;
+            left: 60px;
+            top: 60px;
+         }
+      }
 
       .brooke-two-content {
          width: 100%;
@@ -101,24 +114,25 @@
 
    .brooke-two-container {
       flex-direction: column-reverse;
-   }
-   .brooke-two-image {
-      width: 100%;
       padding: 0 15px;
 
-      // display: none;
-   }
-
-   .brooke-two-content {
-      width: 100%;
-      padding: 15px;
-
-      .brooke-two-title {
-         font-size: 1.5em !important;
+      .brooke-two-image {
+         width: 100% !important;
+         height: 400px !important;
+         // display: none;
       }
 
-      .brooke-two-description {
-         margin: 0 0 28px 0 !important;
+      .brooke-two-content {
+         width: 100%;
+         max-width: none !important;
+
+         .brooke-two-title {
+            font-size: 1.5em !important;
+         }
+
+         .brooke-two-description {
+            margin: 0 0 28px 0 !important;
+         }
       }
    }
 }
