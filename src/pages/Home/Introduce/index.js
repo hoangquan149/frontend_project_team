@@ -2,7 +2,7 @@ import icons from "../../../assets/icons";
 import "./style.scss";
 function Introduce() {
    return (
-      <div className="introduce">
+      <div className="introduce ">
          <div className="introduce-container">
             <div className="introduce-content">
                <h1 className="introduce-title">Your hub for teamwork</h1>
@@ -20,7 +20,7 @@ function Introduce() {
                </a>
             </div>
          </div>
-         {/* <img className="introduce-image" src={icons.dashboard.default} /> */}
+         <div className="introduce-image"></div>
       </div>
    );
 }

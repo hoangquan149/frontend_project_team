@@ -1,13 +1,14 @@
 @import "../../../styles/variables.scss";
 
 .brooke-two {
+   margin-top: 50px;
+
    position: relative;
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
    width: 100%;
-   height: 700px;
 
    .brooke-two-container {
       width: $width-container;
@@ -88,8 +89,13 @@
 
       .brooke-two-image {
          width: 400px;
+         height: 400px !important;
          flex-basis: 48%;
          margin-left: 20px;
+
+         .brooke-two-image-content {
+            display: none;
+         }
       }
       .brooke-two-content {
          flex-basis: 48%;
@@ -119,6 +125,10 @@
       .brooke-two-image {
          width: 100% !important;
          height: 400px !important;
+
+         .brooke-two-image-content {
+            display: none;
+         }
       }
 
       .brooke-two-content {

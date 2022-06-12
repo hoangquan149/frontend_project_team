@@ -5,26 +5,30 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 100%;
    margin-top: 100px;
-   height: 700px;
-   max-height: 100%;
 
-   background-image: url("../../../assets/images/dashboard.png");
-   background-repeat: no-repeat;
-   background-position: right center;
-   background-size: auto;
+   .introduce-image {
+      background-image: url("../../../assets/images/dashboard.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: contain;
+
+      width: 100%;
+      // margin-top: 100px;
+      height: 632px;
+   }
 
    .introduce-container {
-      width: $width-container;
-      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      width: $width-container;
+      margin: 0 auto;
 
       .introduce-content {
          width: 100%;
          max-width: 466px;
+         margin-left: 136px;
 
          .introduce-title {
             font-style: normal;
@@ -62,15 +66,6 @@
          }
       }
    }
-
-   // .introduce-image {
-   //    // position: relative;
-   //    background-image: url("../../../assets/images/dashboard.png");
-   //    background-size: auto;
-   //    // background-position: right center;
-   //    height: 604px;
-   //    background-repeat: no-repeat;
-   // }
 }
 
 //pc
@@ -79,20 +74,56 @@
 //tablet
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
    .introduce {
-      background-image: none;
       height: auto;
-      display: none;
+
+      .introduce-container {
+         flex-basis: 48%;
+      }
+      .introduce-image {
+         flex-basis: 48%;
+         height: 400px;
+
+         background-position: center;
+      }
+   }
+
+   .introduce-content {
+      margin-left: 0 !important;
+
+      max-width: none !important;
+      padding: 15px;
+
+      .introduce-title {
+         font-size: 2rem !important;
+      }
+
+      .introduce-description {
+         margin: 0;
+      }
    }
 }
 //mobile
 @media only screen and (max-width: 740px) {
    .introduce {
-      background-image: none;
       margin-top: 50px;
       height: auto;
+
+      flex-direction: column-reverse;
+
+      .introduce-container {
+         width: 100%;
+      }
+
+      .introduce-image {
+         height: 400px;
+         background-size: contain;
+         background-position: center;
+      }
    }
 
    .introduce-content {
+      margin-left: 0 !important;
+
       max-width: none !important;
       padding: 15px;
 

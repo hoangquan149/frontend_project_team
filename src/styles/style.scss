@@ -13,14 +13,14 @@ body {
 }
 
 .wrapper {
-   max-width: $width-wrapper;
+   max-width: $width-wrapper !important;
 
    background: #f5f7fa;
    margin: 0 auto;
 }
 
 .container {
-   max-width: $width-container;
+   max-width: $width-container !important;
    margin: 0 auto;
    padding: 0 15px;
 }

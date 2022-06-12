@@ -90,11 +90,12 @@
       margin: 50px 0;
 
       .banner-title {
-         font-size: 2rem !important;
+         font-size: 1.8rem !important;
       }
 
       .banner-description {
-         margin: 20px 0;
+         // margin: 20px 0;
+         display: none;
       }
    }
 }
@@ -108,7 +109,7 @@
       width: 100%;
       // max-width: 508px;
       .banner-title {
-         font-size: 2rem !important;
+         font-size: 1.8rem !important;
       }
 
       .banner-description {

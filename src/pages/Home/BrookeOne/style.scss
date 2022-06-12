@@ -1,13 +1,14 @@
 @import "../../../styles/variables.scss";
 
 .brooke {
+   margin-top: 50px;
+
    position: relative;
    display: flex;
    align-items: center;
    justify-content: space-between;
    flex-wrap: wrap;
    width: 100%;
-   height: 700px;
 
    .brooke-container {
       width: $width-container;
@@ -33,11 +34,6 @@
             right: 120px;
          }
       }
-
-      // background-image: url("../../../assets/images/dashboard.png");
-      // background-repeat: no-repeat;
-      // background-position: right center;
-      // background-size: auto;
 
       .brooke-content {
          width: 100%;
@@ -82,33 +78,39 @@
 @media only screen and (min-width: 1024px) {
 }
 //tablet
-// @media only screen and (min-width: 740px) and (max-width: 1023px) {
-//    .brooke {
-//       height: auto;
-//       margin-top: 50px;
-//    }
-//    .brooke-container {
-//       padding: 15px;
-//       justify-content: unset;
-//       .brooke-image {
-//          width: 400px;
-//          flex-basis: 48%;
-//          margin-right: 20px;
-//       }
-//       .brooke-content {
-//          flex-basis: 48%;
-//          margin-left: 20px;
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+   .brooke {
+      margin-top: 50px;
+      height: auto;
+   }
+   .brooke-container {
+      padding: 15px;
+      justify-content: unset;
+      .brooke-image {
+         width: 400px;
+         height: 400px !important;
+         flex-basis: 48%;
+         // margin-right: 20px;
+      }
 
-//          .brooke-title {
-//             font-size: 2rem !important;
-//          }
+      .brooke-image-content {
+         display: none;
+      }
 
-//          .brooke-description {
-//             margin: 0 0 28px 0 !important;
-//          }
-//       }
-//    }
-// }
+      .brooke-content {
+         flex-basis: 48%;
+         margin-left: 20px;
+
+         .brooke-title {
+            font-size: 1.8rem !important;
+         }
+
+         .brooke-description {
+            margin: 0 0 28px 0 !important;
+         }
+      }
+   }
+}
 //mobile
 @media only screen and (max-width: 740px) {
    .brooke {
@@ -123,6 +125,10 @@
          width: 100% !important;
          height: 400px !important;
       }
+   }
+
+   .brooke-image-content {
+      display: none;
    }
 
    .brooke-content {

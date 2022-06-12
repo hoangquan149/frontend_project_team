@@ -22,7 +22,7 @@ function Header() {
                />
                <ul className={cx("menu")}>
                   <li className={cx("menu-item")}>
-                     <Link to={LIST_PATH.PRODUCT}>Products</Link>
+                     <Link to={""}>Products</Link>
                   </li>
                   <li className={cx("menu-item")}>
                      <Link to={LIST_PATH.BLOG}>Blog</Link>
