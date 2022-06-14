@@ -14,6 +14,17 @@ import icons from "../../../assets/icons";
 import "./style.scss";
 
 function People() {
+   const params = {
+      lazy: true,
+      pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+      },
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+   };
    return (
       <>
          <div className="people">
@@ -24,21 +35,23 @@ function People() {
                   </h1>
                   <div className="people-list">
                      <Swiper
-                        slidesPerView={4}
+                        {...params}
+                        slidesPerView={1}
                         spaceBetween={20}
-                        freeMode={true}
-                        navigation={true}
+                        // freeMode={true}
+                        navigation
                         breakpoints={{
-                           740: {
-                              width: 740,
+                           576: {
+                              width: 576,
                               slidesPerView: 2,
                            },
                            768: {
                               width: 768,
-                              slidesPerView: 2,
+                              slidesPerView: 1,
                            },
                         }}
-                        modules={[FreeMode, Pagination]}
+                        // modules={[FreeMode, Pagination]}
+
                         className="mySwiper"
                      >
                         <SwiperSlide>

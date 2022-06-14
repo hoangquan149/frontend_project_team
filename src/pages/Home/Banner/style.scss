@@ -22,8 +22,9 @@
 }
 
 .banner-content {
-   width: 100%;
-   max-width: 508px;
+   width: 508px;
+
+   max-width: 100%;
 
    .banner-title {
       font-style: normal;
@@ -102,6 +103,7 @@
 //mobile
 @media only screen and (max-width: 740px) {
    .banner {
+      width: auto !important;
       height: 300px;
    }
 
@@ -120,7 +122,13 @@
       }
 
       .banner-access {
+         flex-direction: column;
+
+         .banner-input {
+            flex: none;
+         }
          .banner-btn {
+            margin-top: 10px;
             margin-left: 0;
          }
       }
