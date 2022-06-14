@@ -42,11 +42,11 @@ function People() {
                   </h1>
                   <div className="people-list">
                      <Swiper
-                        {...params}
                         slidesPerView={1}
-                        centeredSlides={true}
                         spaceBetween={20}
-                        navigation
+                        slidesPerGroup={1}
+                        centeredSlides={true}
+                        loop={true}
                         breakpoints={{
                            576: {
                               width: 576,
@@ -57,9 +57,16 @@ function People() {
                               slidesPerView: 1,
                            },
                         }}
-                        modules={[Pagination, Navigation]}
+                        navigation={true}
+                        modules={[Navigation, FreeMode]}
                         className="mySwiper"
                      >
+                        <SwiperSlide>
+                           <PeopleItem />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                           <PeopleItem />
+                        </SwiperSlide>
                         <SwiperSlide>
                            <PeopleItem />
                         </SwiperSlide>
