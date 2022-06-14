@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,6 +14,13 @@ import icons from "../../../assets/icons";
 import "./style.scss";
 
 function People() {
+   useEffect(() => {
+      const prev = document.querySelector(".swiper-button-prev");
+      const next = document.querySelector(".swiper-button-next");
+      const box = document.querySelector(".people-action-container");
+      box.append(prev, next);
+   }, []);
+
    const params = {
       lazy: true,
       pagination: {
@@ -37,8 +44,8 @@ function People() {
                      <Swiper
                         {...params}
                         slidesPerView={1}
+                        centeredSlides={true}
                         spaceBetween={20}
-                        // freeMode={true}
                         navigation
                         breakpoints={{
                            576: {
@@ -50,8 +57,7 @@ function People() {
                               slidesPerView: 1,
                            },
                         }}
-                        // modules={[FreeMode, Pagination]}
-
+                        modules={[Pagination, Navigation]}
                         className="mySwiper"
                      >
                         <SwiperSlide>
@@ -69,19 +75,10 @@ function People() {
                         <SwiperSlide>
                            <PeopleItem />
                         </SwiperSlide>
+                        <div className="people-action-container"></div>
                      </Swiper>
                   </div>
                </div>
-            </div>
-         </div>
-         <div className="container">
-            <div className="people-actions">
-               <button className="people-action">
-                  <img src={icons.vt.default} />
-               </button>
-               <button className="people-action">
-                  <img src={icons.vt.default} />
-               </button>
             </div>
          </div>
       </>
