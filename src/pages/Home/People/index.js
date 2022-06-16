@@ -79,7 +79,7 @@ function People() {
                   </h1>
                   <div className="people-list">
                      <Swiper
-                        slidesPerView={4}
+                        slidesPerView={1}
                         spaceBetween={20}
                         // slidesPerGroup={2}
                         // centeredSlides={true}
