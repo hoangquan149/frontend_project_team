@@ -1,74 +1,46 @@
 import React, { useRef, useState, useEffect } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-import { FreeMode, Pagination, Navigation } from "swiper";
+// owlcarausel
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import PeopleItem from "../../../commons/components/PeopleItem";
-import icons from "../../../assets/icons";
 
-import Slider from "react-slick";
 import "./style.scss";
+// className="owl-theme"
+// pagination={false}
+// dots={false}
+// loop
+// margin={20}
+// nav
+const options = {
+   margin: 20,
+   responsiveClass: true,
+   nav: true,
+   dots: false,
+   loop: true,
+   responsive: {
+      0: {
+         items: 1,
+      },
+      400: {
+         items: 1,
+      },
+   },
+};
 
 function People() {
    useEffect(() => {
-      const prev = document.querySelector(".swiper-button-prev");
-      const next = document.querySelector(".swiper-button-next");
-      const box = document.querySelector(".people-action-container");
-      box.append(prev, next);
+      document.querySelector(".owl-prev").innerHTML = "";
+      document.querySelector(".owl-next").innerHTML = "";
    }, []);
 
-   // var settings = {
-   //    dots: true,
-   //    infinite: false,
-   //    speed: 500,
-   //    slidesToShow: 3,
-   //    slidesToScroll: 4,
-   //    initialSlide: 0,
-   //    responsive: [
-   //       {
-   //          breakpoint: 1024,
-   //          settings: {
-   //             slidesToShow: 3,
-   //             slidesToScroll: 3,
-   //             infinite: true,
-   //             dots: true,
-   //          },
-   //       },
-   //       {
-   //          breakpoint: 600,
-   //          settings: {
-   //             slidesToShow: 2,
-   //             slidesToScroll: 2,
-   //             initialSlide: 2,
-   //          },
-   //       },
-   //       {
-   //          breakpoint: 480,
-   //          settings: {
-   //             slidesToShow: 1,
-   //             slidesToScroll: 1,
-   //          },
-   //       },
-   //    ],
-   // };
-
-   const params = {
-      lazy: true,
-      pagination: {
-         el: ".swiper-pagination",
-         clickable: true,
-      },
-      navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-      },
-   };
    return (
       <>
          <div className="people">
@@ -78,7 +50,7 @@ function People() {
                      What people say about Team
                   </h1>
                   <div className="people-list">
-                     <Swiper
+                     {/* <Swiper
                         slidesPerView={1}
                         spaceBetween={20}
                         // slidesPerGroup={2}
@@ -122,7 +94,45 @@ function People() {
                         </SwiperSlide>
 
                         <div className="people-action-container"></div>
-                     </Swiper>
+                     </Swiper> */}
+                     <OwlCarousel
+                        className="owl-theme"
+                        pagination={false}
+                        dots={false}
+                        responsive={{
+                           0: {
+                              items: 1,
+                              rows: 1,
+                           },
+                           600: {
+                              items: 3,
+                              rows: 1,
+                           },
+                           1000: {
+                              items: 3,
+                              rows: 1,
+                           },
+                        }}
+                        loop={false}
+                        margin={20}
+                        nav
+                     >
+                        <div className="item">
+                           <PeopleItem />
+                        </div>
+                        <div className="item">
+                           <PeopleItem />
+                        </div>{" "}
+                        <div className="item">
+                           <PeopleItem />
+                        </div>{" "}
+                        <div className="item">
+                           <PeopleItem />
+                        </div>{" "}
+                        <div className="item">
+                           <PeopleItem />
+                        </div>
+                     </OwlCarousel>
                   </div>
                </div>
             </div>

@@ -3,8 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { PUBLIC_ROUTES } from "./routes";
 import DefaultLayout from "./components/layouts/DefaultLayout";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
 
 function App() {
