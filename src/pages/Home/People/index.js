@@ -11,6 +11,8 @@ import { FreeMode, Pagination, Navigation } from "swiper";
 
 import PeopleItem from "../../../commons/components/PeopleItem";
 import icons from "../../../assets/icons";
+
+import Slider from "react-slick";
 import "./style.scss";
 
 function People() {
@@ -20,6 +22,41 @@ function People() {
       const box = document.querySelector(".people-action-container");
       box.append(prev, next);
    }, []);
+
+   // var settings = {
+   //    dots: true,
+   //    infinite: false,
+   //    speed: 500,
+   //    slidesToShow: 3,
+   //    slidesToScroll: 4,
+   //    initialSlide: 0,
+   //    responsive: [
+   //       {
+   //          breakpoint: 1024,
+   //          settings: {
+   //             slidesToShow: 3,
+   //             slidesToScroll: 3,
+   //             infinite: true,
+   //             dots: true,
+   //          },
+   //       },
+   //       {
+   //          breakpoint: 600,
+   //          settings: {
+   //             slidesToShow: 2,
+   //             slidesToScroll: 2,
+   //             initialSlide: 2,
+   //          },
+   //       },
+   //       {
+   //          breakpoint: 480,
+   //          settings: {
+   //             slidesToShow: 1,
+   //             slidesToScroll: 1,
+   //          },
+   //       },
+   //    ],
+   // };
 
    const params = {
       lazy: true,
@@ -42,11 +79,12 @@ function People() {
                   </h1>
                   <div className="people-list">
                      <Swiper
-                        slidesPerView={1}
+                        slidesPerView={4}
                         spaceBetween={20}
-                        slidesPerGroup={1}
-                        centeredSlides={true}
-                        loop={true}
+                        // slidesPerGroup={2}
+                        // centeredSlides={true}
+                        cssMode
+                        // loop={true}
                         breakpoints={{
                            576: {
                               width: 576,
@@ -58,7 +96,7 @@ function People() {
                            },
                         }}
                         navigation={true}
-                        modules={[Navigation, FreeMode]}
+                        modules={[Navigation]}
                         className="mySwiper"
                      >
                         <SwiperSlide>
@@ -82,6 +120,7 @@ function People() {
                         <SwiperSlide>
                            <PeopleItem />
                         </SwiperSlide>
+
                         <div className="people-action-container"></div>
                      </Swiper>
                   </div>

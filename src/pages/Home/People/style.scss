@@ -1,5 +1,10 @@
 @import "../../../styles/variables.scss";
 
+.swiper-slide {
+   width: 367px !important;
+   height: 370px !important;
+}
+
 .people {
    margin-top: 50px;
    margin-left: 136px;
@@ -37,11 +42,6 @@
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
    }
-}
-
-.swiper-slide {
-   width: 367px !important;
-   height: 370px !important;
 }
 
 .swiper-button-next,
